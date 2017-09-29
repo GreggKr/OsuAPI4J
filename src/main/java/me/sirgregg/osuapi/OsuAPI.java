@@ -1,14 +1,11 @@
 package me.sirgregg.osuapi;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class OsuAPI {
 	private String token;
-	private Gson gson = new GsonBuilder().create();
+	private Osu osu;
 
 	public OsuAPI(String token) {
 		if (token == null || !isValidToken(token)) {
@@ -16,6 +13,7 @@ public class OsuAPI {
 		}
 
 		this.token = token;
+		this.osu = new Osu(token);
 	}
 
 	/**
@@ -33,9 +31,5 @@ public class OsuAPI {
 
 	public String getToken() {
 		return token;
-	}
-
-	public Gson getGson() {
-		return gson;
 	}
 }
