@@ -32,4 +32,8 @@ public class OsuAPI {
 	public String getToken() {
 		return token;
 	}
+
+	public Osu getOsu() {
+		return osu;
+	}
 }
