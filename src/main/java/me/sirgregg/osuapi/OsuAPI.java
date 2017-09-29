@@ -1,0 +1,41 @@
+package me.sirgregg.osuapi;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class OsuAPI {
+	private String token;
+	private Gson gson = new GsonBuilder().create();
+
+	public OsuAPI(String token) {
+		if (token == null || !isValidToken(token)) {
+			throw new IllegalArgumentException("That is not a valid token.");
+		}
+
+		this.token = token;
+	}
+
+	/**
+	 * Validates a token
+	 *
+	 * @param token osu!api token that you wish to check
+	 * @return if the token matches the regex
+	 */
+	private boolean isValidToken(String token) {
+		Pattern pattern = Pattern.compile("^[a-zA-Z0-9]{40}$");
+		Matcher matcher = pattern.matcher(token);
+
+		return matcher.find();
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public Gson getGson() {
+		return gson;
+	}
+}
