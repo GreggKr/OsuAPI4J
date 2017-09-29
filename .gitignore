@@ -23,3 +23,9 @@ hs_err_pid*
 
 # IntelliJ iml file
 *.iml
+
+# .idea folder
+.idea/
+
+# target folder
+target/
