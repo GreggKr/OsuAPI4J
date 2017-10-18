@@ -50,4 +50,76 @@ public class User {
 	private String countryRank;
 
 	private List<Event> events;
+
+	public String getUserID() {
+		return userID;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public String getCount300() {
+		return count300;
+	}
+
+	public String getCount100() {
+		return count100;
+	}
+
+	public String getCount50() {
+		return count50;
+	}
+
+	public String getPlayCount() {
+		return playCount;
+	}
+
+	public String getRankedScore() {
+		return rankedScore;
+	}
+
+	public String getTotalScore() {
+		return totalScore;
+	}
+
+	public String getRank() {
+		return rank;
+	}
+
+	public String getLevel() {
+		return level;
+	}
+
+	public String getPp() {
+		return pp;
+	}
+
+	public String getAccuracy() {
+		return accuracy;
+	}
+
+	public String getSsCount() {
+		return ssCount;
+	}
+
+	public String getsCount() {
+		return sCount;
+	}
+
+	public String getaCount() {
+		return aCount;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public String getCountryRank() {
+		return countryRank;
+	}
+
+	public List<Event> getEvents() {
+		return events;
+	}
 }

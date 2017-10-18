@@ -16,4 +16,24 @@ public class Event {
 
 	@SerializedName("epicfactor")
 	private String epicFactor;
+
+	public String getHtml() {
+		return html;
+	}
+
+	public String getBeatmapID() {
+		return beatmapID;
+	}
+
+	public String getBeatmapSetID() {
+		return beatmapSetID;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public String getEpicFactor() {
+		return epicFactor;
+	}
 }
