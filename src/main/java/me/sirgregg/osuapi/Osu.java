@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonParser;
 import me.sirgregg.osuapi.objects.Beatmap;
+import me.sirgregg.osuapi.objects.user.User;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -54,6 +55,18 @@ public class Osu {
 		if (jsonExists(json)) {
 			Gson gson = new GsonBuilder().create();
 			return gson.fromJson(json, Beatmap[].class)[0];
+		}
+
+		return null;
+	}
+
+	public User getUser(String username, int mode, int eventDays) {
+		String url = baseURL + "get_user?k=" + sanatizeURL(token) + "&u=" + sanatizeURL(username) + "&type=string&event_days";
+
+		String json = getJson(url);
+		if (jsonExists(json)) {
+			Gson gson = new GsonBuilder().create();
+			return gson.fromJson(json, User[].class)[0];
 		}
 
 		return null;
