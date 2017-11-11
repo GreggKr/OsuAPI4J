@@ -5,121 +5,121 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class User {
-	@SerializedName("user_id")
-	private String userID;
+    @SerializedName("user_id")
+    private String userID;
 
-	private String username;
+    private String username;
 
-	private String count300;
+    private String count300;
 
-	private String count100;
+    private String count100;
 
-	private String count50;
+    private String count50;
 
-	@SerializedName("playcount")
-	private String playCount;
+    @SerializedName("playcount")
+    private String playCount;
 
-	@SerializedName("ranked_score")
-	private String rankedScore;
+    @SerializedName("ranked_score")
+    private String rankedScore;
 
-	@SerializedName("total_score")
-	private String totalScore;
+    @SerializedName("total_score")
+    private String totalScore;
 
-	@SerializedName("pp_rank")
-	private String rank;
+    @SerializedName("pp_rank")
+    private String rank;
 
-	private String level;
+    private String level;
 
-	@SerializedName("pp_raw")
-	private String pp;
+    @SerializedName("pp_raw")
+    private String pp;
 
-	private String accuracy;
+    private String accuracy;
 
-	@SerializedName("count_rank_ss")
-	private String ssCount;
+    @SerializedName("count_rank_ss")
+    private String ssCount;
 
-	@SerializedName("count_rank_s")
-	private String sCount;
+    @SerializedName("count_rank_s")
+    private String sCount;
 
-	@SerializedName("count_rank_a")
-	private String aCount;
+    @SerializedName("count_rank_a")
+    private String aCount;
 
-	private String country;
+    private String country;
 
-	@SerializedName("pp_country_rank")
-	private String countryRank;
+    @SerializedName("pp_country_rank")
+    private String countryRank;
 
-	private List<Event> events;
+    private List<Event> events;
 
-	public String getUserID() {
-		return userID;
-	}
+    public String getUserID() {
+        return userID;
+    }
 
-	public String getUsername() {
-		return username;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public String getCount300() {
-		return count300;
-	}
+    public String getCount300() {
+        return count300;
+    }
 
-	public String getCount100() {
-		return count100;
-	}
+    public String getCount100() {
+        return count100;
+    }
 
-	public String getCount50() {
-		return count50;
-	}
+    public String getCount50() {
+        return count50;
+    }
 
-	public String getPlayCount() {
-		return playCount;
-	}
+    public String getPlayCount() {
+        return playCount;
+    }
 
-	public String getRankedScore() {
-		return rankedScore;
-	}
+    public String getRankedScore() {
+        return rankedScore;
+    }
 
-	public String getTotalScore() {
-		return totalScore;
-	}
+    public String getTotalScore() {
+        return totalScore;
+    }
 
-	public String getRank() {
-		return rank;
-	}
+    public String getRank() {
+        return rank;
+    }
 
-	public String getLevel() {
-		return level;
-	}
+    public String getLevel() {
+        return level;
+    }
 
-	public String getPp() {
-		return pp;
-	}
+    public String getPp() {
+        return pp;
+    }
 
-	public String getAccuracy() {
-		return accuracy;
-	}
+    public String getAccuracy() {
+        return accuracy;
+    }
 
-	public String getSsCount() {
-		return ssCount;
-	}
+    public String getSsCount() {
+        return ssCount;
+    }
 
-	public String getsCount() {
-		return sCount;
-	}
+    public String getsCount() {
+        return sCount;
+    }
 
-	public String getaCount() {
-		return aCount;
-	}
+    public String getaCount() {
+        return aCount;
+    }
 
-	public String getCountry() {
-		return country;
-	}
+    public String getCountry() {
+        return country;
+    }
 
-	public String getCountryRank() {
-		return countryRank;
-	}
+    public String getCountryRank() {
+        return countryRank;
+    }
 
-	public List<Event> getEvents() {
-		return events;
-	}
+    public List<Event> getEvents() {
+        return events;
+    }
 }
